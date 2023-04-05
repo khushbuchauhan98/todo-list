@@ -48,10 +48,20 @@ submit = () => {
         desc: desc.value,
         date: date.value
     }
-    users.push(tempuser);
-    task.value = '';
-    desc.value = ''
-    date.value = ''
+    let tasks=users.filter((user)=>{
+        return user.task==task.value
+    })
+    if(tasks.length ==0 ){
+        users.push(tempuser);
+       
+        task.value = '';
+        desc.value = ''
+        date.value = ''
+    }
+    else{
+        alert('same task exists')
+    }
+    
     render()
     console.log(users)
 }

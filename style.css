@@ -13,7 +13,6 @@ body {
 .top {
     border: none;
     border-radius: 10px;
-
     margin: 20px;
     background-color: #fff;
     box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
@@ -47,16 +46,6 @@ body {
     border-right: none;
 }
 
-.content-list {
-    text-align: center;
-    height: 350px;
-    width: 900px;
-}
-
-img {
-    width: 100%;
-}
-
 .card {
     width: 250px;
     margin: auto;
@@ -77,7 +66,7 @@ img {
 .addtask {
 
     border: none;
-    width: 850px;
+    width: 600px;
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -162,10 +151,8 @@ img {
 
 .right {
 
-    width: 900px;
-
+    width: 600px;
     padding: 12px;
-
     box-sizing: border-box;
 }
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <label class="ml">My ToDo's</label>
+            <!-- <div class="right" id="r" >
+            <div class="students" id="right">
+                <div class="card">
+                    <img src="WhatsApp Image 2023-04-05 at 10.38.58 PM.jpeg" alt="">
+                </div>
+                <h2>You have no Task Today</h2>
+                <p class="para">You have no task today.
+                    <p class="para">Start adding your new tasks!</p>
+            
+            </div>
+        </div> -->
+            <div class="right" id="right">
+                <div id="rightcontent">
+                    <div class="card">
+                        <img src="WhatsApp Image 2023-04-05 at 10.38.58 PM.jpeg" alt="">
+                    </div>
+                    <div class="center">
+                        <h2>You have no Task Today</h2>
+                        <p class="para">You have no task today.
+                        <p class="para">Start adding your new tasks!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="addtask">
+            <div class="center label-head">Add Task</div>
+
+            <input type="text" placeholder="Task name here" id="task" class="taskname input">
+            <input type="text" placeholder="Description" id="desc" class="input">
+            <div class="flex">
+                <input type="text" class="date" id="date" placeholder="Due Date" onfocus="(this.type='datetime-local')">
+                <button class="btn" onclick="submit()">Add Task</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

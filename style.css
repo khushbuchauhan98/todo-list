@@ -66,7 +66,7 @@ img {
 .addtask {
 
     border: none;
-    width: 600px;
+    width: 850px;
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -151,7 +151,7 @@ img {
 
 .right {
 
-    width: 600px;
+    width: 900px;
     padding: 12px;
     box-sizing: border-box;
 }

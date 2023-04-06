@@ -14,17 +14,19 @@ render = () => {
         p2.classList.add('block');
         p1.classList.add('p1')
         p3.classList.add('d')
+       
         divs1.id = 'bg'
         p1.innerText = user.task
         p2.innerText = user.desc;
         p3.innerText = user.date;
         checl.type = 'checkbox'
-
+        checl.id='checks'
         //     checl.addEventListener('click',(e)=>{
         //         let bg=document.getElementById('bg')
         // bg.classList.add('bg')
         //     })
         // checl.onclick(fail())
+        
         divs.appendChild(checl)
         right.appendChild(divs);
         divs.append(divs1)
@@ -32,13 +34,21 @@ render = () => {
         divs1.appendChild(p1);
         divs1.appendChild(p2);
         divs1.appendChild(p3)
+        
         checl.onclick = function () {
-
-            divs1.classList.add('bg')
+            if(checl.checked ==true){
+                divs1.classList.add('bg')
+            }
+            else{
+                divs1.classList.remove('bg')
+            }
+           
         }
+
     })
 
 }
+
 submit = () => {
     let task = document.getElementById('task');
     let desc = document.getElementById('desc');

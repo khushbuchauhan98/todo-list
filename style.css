@@ -10,16 +10,6 @@ body {
     align-items: center;
 }
 
-.top {
-    border: none;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: #fff;
-    box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
-    -webkit-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
-    -moz-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
-}
-
 .ml {
     margin-left: 20px;
     font-size: x-large;
@@ -61,18 +51,6 @@ body {
 img {
     width: 100%;
 
-}
-
-.addtask {
-
-    border: none;
-    width: 850px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
-    -webkit-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
-    -moz-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
 }
 
 .label-head {
@@ -149,13 +127,6 @@ img {
     margin-bottom: 12px;
 }
 
-.right {
-
-    width: 900px;
-    padding: 12px;
-    box-sizing: border-box;
-}
-
 .center {
     text-align: center;
 }
@@ -167,4 +138,74 @@ img {
 
 .d {
     color: brown;
+}
+
+@media (max-width:810px) {
+    .top {
+        width: 90%;
+        border: none;
+        border-radius: 10px;
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -webkit-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -moz-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+    }
+
+    .right {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .addtask {
+        border: none;
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -webkit-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -moz-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+    }
+}
+
+@media (min-width:810px) {
+
+    .top {
+        width: 850px;
+        border: none;
+        border-radius: 10px;
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -webkit-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -moz-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+    }
+
+    .right {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .addtask {
+        border: none;
+        width: 850px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -webkit-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+        -moz-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
+    }
+
 }

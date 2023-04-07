@@ -72,9 +72,11 @@ img {
     font-weight: bold;
     font-size: larger;
 }
+
 .placeholderscolor::-webkit-input-placeholder {
-   color: red;
+    color: red;
 }
+
 .date {
     border-radius: 12px;
 }
@@ -173,6 +175,10 @@ img {
         -webkit-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
         -moz-box-shadow: 8px 9px 5px -3px rgba(65, 48, 48, 0.22);
     }
+}
+
+.line {
+    text-decoration: line-through;
 }
 
 @media (min-width:810px) {

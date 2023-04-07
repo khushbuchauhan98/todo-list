@@ -79,8 +79,16 @@ img {
 
 .date {
     border-radius: 12px;
+    border: 2px solid lightgray;
 }
+.date:focus{
+    outline: none;
+    border-radius: 12px;
+    border: 2px solid lightgray;
+   text-align: center;
+   padding-top: 10px;
 
+}
 .flex {
     display: flex;
     justify-content: space-between;
@@ -180,7 +188,10 @@ img {
 .line {
     text-decoration: line-through;
 }
-
+/* .checks:checked+.bg{
+    background-color: rgb(228, 208, 200);
+    gap: 20px;
+} */
 @media (min-width:810px) {
 
     .top {

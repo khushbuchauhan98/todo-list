@@ -37,10 +37,14 @@ render = () => {
         
         checl.onclick = function () {
             if(checl.checked ==true){
+               
                 divs1.classList.add('bg')
+                // checl.checked =true;
             }
             else{
-                divs1.classList.remove('bg')
+                
+                // divs1.classList.remove('bg')
+                checl.checked =true;
             }
            
         }
@@ -58,20 +62,53 @@ submit = () => {
         desc: desc.value,
         date: date.value
     }
-    let tasks=users.filter((user)=>{
-        return user.task==task.value
-    })
-    if(tasks.length ==0 ){
+   
+    if(task.value==''){
+       task.placeholder="task name"
+       task.classList.add('placeholderscolor')
+       setTimeout(() => {
+        task.placeholder="Task name here"
+        task.classList.remove('placeholderscolor')
+       }, 2000);
+    }
+     if(desc.value==''){
+        desc.placeholder="Add Description"
+        desc.classList.add('placeholderscolor')
+        setTimeout(() => {
+            desc.placeholder="Description"
+            desc.classList.remove('placeholderscolor')
+        }, 2000);
+     }
+     if(date.value==''){
+        date.placeholder="Add Date!!"
+        date.classList.add('placeholderscolor')
+        setTimeout(() => {
+            date.placeholder="Due Date"
+            date.classList.remove('placeholderscolor')
+        }, 2000);
+     }
+     else{
         users.push(tempuser);
-       
         task.value = '';
-        desc.value = ''
-        date.value = ''
-    }
-    else{
-        alert('same task exists')
-    }
+            desc.value = ''
+            date.value = '';
+        render()
+     }
+    //   let tasks=users.filter((user)=>{
+    //     return user.task==task.value
+    // })
+    //  if(tasks.length ==0 ){
+    //     users.push(tempuser);
+    //     task.value = '';
+    //     desc.value = ''
+    //     date.value = '';
+    //     render()
+    // }
+   
+    // else{
+    //     alert('same task exists')
+    // }
     
-    render()
+   
     console.log(users)
 }

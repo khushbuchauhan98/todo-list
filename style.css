@@ -72,7 +72,9 @@ img {
     font-weight: bold;
     font-size: larger;
 }
-
+.placeholderscolor::-webkit-input-placeholder {
+   color: red;
+}
 .date {
     border-radius: 12px;
 }
@@ -153,7 +155,7 @@ img {
 
     .right {
         width: 100%;
-        padding: 12px;
+        padding-top: 12px;
         box-sizing: border-box;
     }
 
@@ -188,7 +190,7 @@ img {
 
     .right {
         width: 100%;
-        padding: 12px;
+        padding-top: 12px;
         box-sizing: border-box;
     }
 

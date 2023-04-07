@@ -34,7 +34,7 @@
             <input type="text" placeholder="Task name here" id="task" class="taskname input">
             <input type="text" placeholder="Description" id="desc" class="input">
             <div class="flex">
-                <input type="text" class="date" id="date" placeholder="Due Date" onfocus="(this.type='datetime-local')">
+                <input type="text" class="date" id="date" placeholder="Due Date" onfocus="(this.type='datetime-local')" onblur="(this.type='text')"">
                 <button class="btn" onclick="submit()">Add Task</button>
             </div>
         </div>
@@ -42,5 +42,4 @@
     <script src="app.js"></script>
 
 </body>
-
 </html>
